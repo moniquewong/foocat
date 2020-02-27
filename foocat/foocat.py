@@ -26,6 +26,6 @@ def catbind(a, b):
     Categories (8, object): [but, character, counts,
     eyeballs, hits, integer, where it, your]
     """
-  concatenated = pd.concat([pd.Series(a.astype("str")),
-                 pd.Series(b.astype("str"))])
-  return pd.Categorical(concatenated)
+    concatenated = pd.concat([pd.Series(a.astype("str")), pd.Series(b.astype("str"))])
+
+    return pd.Categorical(concatenated)
